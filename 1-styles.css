@@ -1,0 +1,25 @@
+/* 1-styles.css */
+
+/* Define styles for the link */
+h2 a {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for absolute positioning of pseudo-element */
+}
+
+/* Define styles for the pseudo-element */
+h2 a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position the pseudo-element relative to the link */
+    left: 0; /* Align the pseudo-element with the link */
+    bottom: -2px; /* Position the pseudo-element below the link */
+    width: 100%; /* Make the pseudo-element cover the entire width of the link */
+    height: 2px; /* Set the height of the pseudo-element to create the underline */
+    background-color: black; /* Set the color of the underline */
+    transition: height 0.3s ease-in-out; /* Add transition for smooth appearance */
+    z-index: -1; /* Move the pseudo-element behind the link text */
+}
+
+/* Define hover effect to reveal the underline */
+h2 a:hover::after {
+    height: 100%; /* Increase the height of the pseudo-element to reveal the underline */
+}

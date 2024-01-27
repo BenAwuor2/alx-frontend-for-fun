@@ -1,0 +1,64 @@
+/* 2-styles.css */
+
+/* Reset default margin and padding */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide default checkbox appearance */
+.toggle-cb {
+    display: none;
+}
+
+/* Define styles for the toggle container */
+.toggle {
+    position: relative;
+    width: 60px; /* Set width of the toggle */
+    height: 30px; /* Set height of the toggle */
+}
+
+/* Define styles for the toggle label */
+.toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px; /* Set width of the toggle */
+    height: 30px; /* Set height of the toggle */
+    background-color: #ccc; /* Set background color of the toggle */
+    border-radius: 15px; /* Set border radius to create rounded corners */
+    cursor: pointer;
+}
+
+/* Define styles for the inner part of the toggle */
+.toggle-inner {
+    position: absolute;
+    top: 2px; /* Adjust top position */
+    left: 2px; /* Adjust left position */
+    width: 26px; /* Set width of the inner part */
+    height: 26px; /* Set height of the inner part */
+    background-color: #fff; /* Set background color of the inner part */
+    border-radius: 50%; /* Set border radius to create a circle */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+/* Define styles for the switch part of the toggle */
+.toggle-switch {
+    position: absolute;
+    top: 2px; /* Adjust top position */
+    right: 2px; /* Adjust right position */
+    width: 26px; /* Set width of the switch */
+    height: 26px; /* Set height of the switch */
+    background-color: #999; /* Set background color of the switch */
+    border-radius: 50%; /* Set border radius to create a circle */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+/* Define styles for the toggle when checked */
+.toggle-cb:checked + .toggle-label .toggle-inner {
+    transform: translateX(30px); /* Move the inner part to the right */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+    background-color: #5cb85c; /* Change color of the switch when checked */
+}
