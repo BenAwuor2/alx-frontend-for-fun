@@ -1,0 +1,10 @@
+/*alx-frontend-for-fun*/
+// main.scss
+
+@import "list-names";
+
+@each $name in $list-names {
+  .#{$name} {
+    background-image: url('#{$name}.jpg'); // Assuming your images are named as image1.jpg, image2.jpg, etc.
+  }
+}

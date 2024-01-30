@@ -1,0 +1,15 @@
+/*alx-frontend-for-fun*/
+.info {
+    font-size: 12px; // Font size for all tags of class .info
+  }
+  
+  .success {
+    @extend .info; // Extend style of class .info
+    color: #00FF00; // Text color for all tags of class .success
+  }
+  
+  .warning {
+    @extend .info; // Extend style of class .info
+    color: #FF0000; // Text color for all tags of class .warning
+  }
+  
