@@ -1,0 +1,12 @@
+/*alx-frontend-for-fun*/
+@mixin margin($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
+body{
+    @include margin(10px, 10px);// Applying mixin to body tags
+}
+
+div{
+    @include margin(15px, 15px);// Applying mixin to div tags
+}
