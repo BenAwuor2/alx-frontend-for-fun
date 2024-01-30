@@ -1,0 +1,11 @@
+/*alx-frontend-for-fun*/
+
+body {
+    color: #3D3D3D; // Text color for elements inside body tags
+  
+    .red {
+      &:first-child { // Selecting first children of class .red
+        color: #FF0000; // Text color for first children of class .red
+      }
+    }
+  }
