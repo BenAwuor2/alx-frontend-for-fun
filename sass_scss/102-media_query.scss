@@ -1,1 +1,43 @@
 /*alx-frontend-for-fun*/
+// Base font size for h1 tags
+$h1-base-font-size: 20px;
+
+// Font size for h1 tags when screen width is smaller than 960px
+$h1-medium-font-size: 18px;
+
+// Font size for h1 tags when screen width is smaller than 640px
+$h1-small-font-size: 16px;
+
+// Font size for h1 tags when screen width is smaller than 320px
+$h1-xsmall-font-size: 14px;
+
+// Text color for h1.small tags when screen width is smaller than 320px
+$h1-small-text-color: #1D1D1D;
+
+// Common styles for h1 tags
+h1 {
+  font-size: $h1-base-font-size;
+  
+  // Media query for screens smaller than 960px
+  @media screen and (max-width: 960px) {
+    font-size: $h1-medium-font-size;
+  }
+  
+  // Media query for screens smaller than 640px
+  @media screen and (max-width: 640px) {
+    font-size: $h1-small-font-size;
+  }
+  
+  // Media query for screens smaller than 320px
+  @media screen and (max-width: 320px) {
+    font-size: $h1-xsmall-font-size;
+  }
+}
+
+// Styles for h1.small tags
+h1.small {
+  // Media query for screens smaller than 320px
+  @media screen and (max-width: 320px) {
+    color: $h1-small-text-color;
+  }
+}
